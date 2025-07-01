@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Page with Multiple Forms</title>
+</head>
+<body>
+  <h1>Login Form</h1>
+  <form id="login-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <br>
+    <button type="submit" id="login-button">Login</button>
+  </form>
+
+  <h2>Search Form</h2>
+  <form id="search-form">
+    <input type="text" name="query" id="search-box" placeholder="Search...">
+    <button type="submit" class="btn search-btn">Search</button>
+  </form>
+
+  <h2>Newsletter Signup</h2>
+  <form id="newsletter-form">
+    <input type="email" name="email" id="newsletter-email" placeholder="Your email">
+    <button type="submit" data-testid="newsletter-submit">Subscribe</button>
+  </form>
+
+  <h2>Standalone Buttons</h2>
+  <button id="alert-button" onclick="alert('Clicked!')">Click Me</button>
+  <button class="btn btn-secondary">Another Button</button>
+</body>
+</html>
