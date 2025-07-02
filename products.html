@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head><title>Products</title></head>
+<head>
+  <title>Products</title>
+  <script src="js/cart.js" defer></script>
+</head>
 <body>
   <h1>Products</h1>
   <div class="product" id="product-1">
-    <h2 name="product_name">T-Shirt</h2>
+    <h2>T-Shirt</h2>
     <span id="price-1">$19.99</span>
-    <button id="add-to-cart-1" name="add_button">Add to Cart</button>
+    <button onclick="addToCart('T-Shirt', 19.99)" id="add-to-cart-1">Add to Cart</button>
   </div>
   <div class="product" id="product-2">
-    <h2 name="product_name">Sneakers</h2>
+    <h2>Sneakers</h2>
     <span id="price-2">$49.99</span>
-    <button id="add-to-cart-2" name="add_button">Add to Cart</button>
+    <button onclick="addToCart('Sneakers', 49.99)" id="add-to-cart-2">Add to Cart</button>
   </div>
+  <a href="cart.html">Go to Cart</a>
 </body>
 </html>
