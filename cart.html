@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head><title>Shopping Cart</title></head>
-<body>
+<head>
+  <title>Shopping Cart</title>
+  <script src="js/cart.js" defer></script>
+</head>
+<body onload="renderCart()">
   <h1>Your Cart</h1>
-  <table id="cart-table">
-    <tr><th>Item</th><th>Qty</th><th>Price</th></tr>
-    <tr id="cart-item-1"><td>T-Shirt</td><td>1</td><td>$19.99</td></tr>
-  </table>
-  <button id="checkout" name="checkout_btn">Checkout</button>
+  <div id="cart-contents"></div>
+  <button onclick="clearCart()">Clear Cart</button>
 </body>
 </html>
